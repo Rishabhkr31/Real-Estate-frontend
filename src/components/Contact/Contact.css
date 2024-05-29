@@ -1,0 +1,80 @@
+.c-container{
+    justify-content:space-around;
+}
+.c-container>div{
+    flex:1
+}
+.c-right{
+    width:100%;
+}
+.c-left{
+    gap:0.5rem;
+}
+.contactModes{
+    margin-top:2rem;
+    gap:1rem;
+}
+ .contactModes .row{
+    gap:1rem;
+ }
+ .inside1{
+    width: 16rem;
+    padding: 1rem;
+    border: 0.8px solid rgba(128, 128, 128, 0.143);
+    border-radius: 5px;
+    gap: 1rem;
+    transition: all 300ms ease-in;
+  }
+  .button1 {
+    width: 100%;
+    padding:0.6rem 1.4rem;
+    background: var(--lightBlue);
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .detail .primaryText{
+    font-size:1.1rem;
+    font-weight:600;
+  }
+  .row:hover {
+    scale: 1.1;
+    box-shadow: var(--shadow);
+  }
+  
+  .button1:hover {
+    background: var(--blue-gradient);
+    color: white;
+    scale: 0.9;
+  }
+  @media (max-width: 1024px) {
+    .c-container {
+      flex-direction: column;
+    }
+    .c-right {
+      justify-content: center;
+    }
+  
+      .contactModes{
+        flex-direction:column;
+          width: 100%;
+      }
+      .row{
+          flex-direction: column;
+          width: 100%;
+      }
+      .mode{
+          width: 100%;
+      }
+      .inside1{
+        width:100%;
+      }
+      .image-container{
+        display:flex;
+        justify-content: center;
+
+      }
+     
+  }
+
+  
